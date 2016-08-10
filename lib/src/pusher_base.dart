@@ -2,7 +2,7 @@
 // is governed by a BSD-style license that can be found in the LICENSE file.
 
 @JS()
-library pusher;
+library pusher_js_base;
 
 import 'package:js/js.dart';
 import 'dart:js';

@@ -1,6 +1,6 @@
-name: pusher
+name: pusher_js
 description: Pusher wrapper for Dart
-version: 1.0.0
+version: 1.0.1
 author: John Ryan <email@example.com>
 homepage: https://www.github.com/pusher-dart
 

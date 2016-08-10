@@ -1,4 +1,4 @@
-import 'package:pusher/pusher.dart';
+import 'package:pusher_js/pusher_js.dart';
 import 'dart:js';
 import 'dart:html';
 import 'dart:async';
