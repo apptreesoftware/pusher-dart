@@ -26,6 +26,7 @@ class Pusher {
   external ConnectionManager get connection;
 }
 
+@anonymous
 @JS()
 class Config {
 /**
@@ -102,6 +103,7 @@ class Config {
   external set httpsPort(num value);
 }
 
+@anonymous
 @JS()
 class AuthConfig {
   external set params(JsObject value);
@@ -115,6 +117,8 @@ class AuthConfig {
   }
 }
 
+@anonymous
+@JS()
 class Channel extends GenericEventsDispatcher<Channel> {
   /** Triggers an event */
   external bool trigger(String eventName, data);
@@ -188,6 +192,7 @@ class ErrorCallbacks {
   external Function get retry;
 }
 
+@JS()
 class HandshakeCallbacks {
   external Function get ssl_only;
   external Function get refused;
