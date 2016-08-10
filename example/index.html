@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pusher Connection Status</title>
+
+    <link rel="stylesheet" href="stylesheet.css" type="text/css" />
+    <script type="text/javascript" src="packages/pusher/pusher.js"></script>
+    <script type="application/dart" src="app.dart"></script>
+    <script type="text/javascript" src="packages/browser/dart.js"></script>
+</head>
+<body>
+<div id="container">
+    <header>
+        <h2>Pusher Connection Status</h2>
+    </header>
+    <div class="light_container">
+        <p>
+        <div id="redon" class="redon" style="display:none;">&nbsp;</div>
+        <div id="redoff" class="redoff" style="display:none;">&nbsp;</div>
+        <p>
+        <div id="amberon" class="amberon" style="display:none;">&nbsp;</div>
+        <div id="amberoff" class="amberoff" style="display:none;">&nbsp;</div>
+        <p>
+        <div id="greenon" class="greenon" style="display:none;">&nbsp;</div>
+        <div id="greenoff" class="greenoff" style="display:none;">&nbsp;</div>
+        <p>
+    </div>
+
+    <div class="connect_disconnect">
+            <a href="#" id="connect">Connect</a>
+            <a href="#" id="disconnect">Disconnect</a>
+    </div>
+</div>
+<footer><a href="http://pusher.com">Pusher Ltd.</a></footer>
+</body>
+</html>
