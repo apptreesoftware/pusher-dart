@@ -107,14 +107,7 @@ class Config {
 @JS()
 class AuthConfig {
   external set params(JsObject value);
-  setParams(Map m){
-    params = new JsObject.jsify(m);
-  }
-
   external set headers(JsObject value);
-  setHeaders(Map m){
-    headers = new JsObject.jsify(m);
-  }
 }
 
 @anonymous
@@ -152,7 +145,7 @@ class GenericEventsDispatcher<Self extends EventsDispatcher>
   external bind_all(Function callback);
   external unbind(String eventName, [Function callback, dynamic context]);
   external unbind_all([String eventName, Function callback]);
-  external emit(String eventName, [dynamic data]);
+  external emit(String eventName, [data]);
 }
 
 @JS()
