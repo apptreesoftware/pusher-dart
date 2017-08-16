@@ -5,7 +5,6 @@
 library pusher_js_base;
 
 import 'package:js/js.dart';
-import 'dart:js';
 
 @JS()
 class Pusher {
@@ -106,8 +105,8 @@ class Config {
 @anonymous
 @JS()
 class AuthConfig {
-  external set params(JsObject value);
-  external set headers(JsObject value);
+  external set params(dynamic /*JsObject*/ value);
+  external set headers(dynamic /*JsObject */ value);
 }
 
 @anonymous
